@@ -324,8 +324,8 @@ torrents_dict = {
     'yts': {'source': f"{TORRENT_API}/yts/", 'result_str': RESULT_STR_YTS},
     'eztv': {'source': f"{TORRENT_API}/eztv/", 'result_str': RESULT_STR_EZTV},
     'torlock': {'source': f"{TORRENT_API}/torlock/", 'result_str': RESULT_STR_TORLOCK},
-    'rarbg': {'source': f"{TORRENT_API}/rarbg/", 'result_str': RESULT_STR_RARBG},
-    'ts': {'source': f"{TORRENT_API}/all/", 'result_str': RESULT_STR_ALL}
+    'rarbg1': {'source': f"{TORRENT_API}/rarbg/", 'result_str': RESULT_STR_RARBG},
+    'ts1': {'source': f"{TORRENT_API}/all/", 'result_str': RESULT_STR_ALL}
 }
 
 torrent_handlers = [
@@ -345,7 +345,7 @@ def searchhelp(update, context):
 • /eztv <i>[search query]</i>
 • /torlock <i>[search query]</i>
 • /rarbg <i>[search query]</i>
-• /ts <i>[search query]</i>
+• /ts1 <i>[search query]</i>
 '''
     sendMessage(help_string, context.bot, update)
     
